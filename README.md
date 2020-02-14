@@ -1,6 +1,7 @@
 # Registry Service
  
-Backend service for job external services registry
+Expand.org - Backend service for job external services registry. This allows 3rd party services to replace internal Expand.org services.
+
 ## Description
 
 Each job can register its own external services. These services are stored as json, taking the following shape:
@@ -8,10 +9,10 @@ Each job can register its own external services. These services are stored as js
 ```
 {
   "AssignmentValidator": {
-    "url": "https://us-central1-gems-org.cloudfunctions.net/validate"
+    "url": "https://..."
   },
   "AssignmentCreator": {
-    "url": "https://us-central1-gems-org.cloudfunctions.net/create"
+    "url": "https://..."
   }  
 }
 ```
@@ -27,11 +28,11 @@ Each job can register its own external services. These services are stored as js
 
 Clone the repository with: 
 
-`go get -u github.com/gemsorg/registry`
+`go get -u github.com/expandorg/registry`
 
 OR 
 
-create a directory `$GOPATH/src/github/gemsorg` and execute: git clone git@github.com:gemsorg/registry.git 
+create a directory `$GOPATH/src/github/expandorg` and execute: git clone git@github.com:expandorg/registry.git 
 
 Run the project dependencies (db, etc.) with `make up`
 
