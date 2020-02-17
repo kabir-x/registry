@@ -1,6 +1,6 @@
-package main
+      package main
 
-import (
+        import (
 	"flag"
 	"fmt"
 	"log"
@@ -15,7 +15,7 @@ import (
 	"github.com/expandorg/registry/pkg/server"
 )
 
-func main() {
+function main() {
 	environment := flag.String("env", "local", "use compose in compose-dev")
 	flag.Parse()
 
